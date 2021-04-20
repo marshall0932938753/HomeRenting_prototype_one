@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".bouns.Bonus_Distribution">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#19B0ED"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back_imgBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="#19B0ED"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="90dp"
+            android:gravity="center"
+            android:text="工單獎金分潤"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="2"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:background="#19B0ED">-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/month_text"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:text="October"-->
+    <!--            android:textSize="30sp"-->
+    <!--            android:textColor="#FFFFFF"/>-->
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:orientation="horizontal">-->
+    <!--            <ImageButton-->
+    <!--                android:id="@+id/previous_btn"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="30dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:src="@drawable/back_white"-->
+    <!--                android:scaleType="centerCrop"-->
+    <!--                android:layout_gravity="center_vertical"-->
+    <!--                android:background="#19B0ED"/>-->
+    <!--            <TextView-->
+    <!--                android:id="@+id/week_text"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_weight="9"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Week 1"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:gravity="center"-->
+    <!--                android:textColor="#FFFFFF"-->
+    <!--                android:textSize="30sp"/>-->
+    <!--            <ImageButton-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="30dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:src="@drawable/back_right"-->
+    <!--                android:scaleType="centerCrop"-->
+    <!--                android:layout_gravity="center_vertical"-->
+    <!--                android:background="#19B0ED"/>-->
+    <!--        </LinearLayout>-->
+    <!--    </LinearLayout>-->
+
+    <ListView
+        android:id="@+id/orderList_BD"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F2F2F2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/valuationBlue_Btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/valuation_btn_drawable" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="估價單"
+                android:textColor="#D5D5D5"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/order_imgBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/order_btn_drawable" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="訂單"
+                android:textColor="#D5D5D5"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/calendar_imgBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/calendar_btn_drawable" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="行事曆"
+                android:textColor="#D5D5D5"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/system_imgBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/system_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人事系統"
+                android:textColor="#19B0ED"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/setting_imgBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/setting_btn_drawable" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的系統"
+                android:textColor="#D5D5D5"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

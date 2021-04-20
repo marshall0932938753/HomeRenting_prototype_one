@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".furniture.Edit_Furniture">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="top"
+        android:orientation="vertical"
+        android:background="#00BFFF"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修改家具"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:layout_gravity="top"
+        android:background="#FFFFFF">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical"
+            android:layout_weight="9">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="家具清單"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/furnitureSpace_sp_EF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="13"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FB8527"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="家具名稱"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="原始數量"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="最終數量"
+                        android:textColor="@android:color/background_light" />
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="0dp"-->
+                    <!--                        android:layout_height="match_parent"-->
+                    <!--                        android:layout_weight="3"-->
+                    <!--                        android:text="編號"-->
+                    <!--                        android:textColor="#FFFFFF"/>-->
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="0dp"-->
+                    <!--                        android:layout_height="match_parent"-->
+                    <!--                        android:layout_weight="6"-->
+                    <!--                        android:text="品項名稱"-->
+                    <!--                        android:textColor="#FFFFFF"/>-->
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="0dp"-->
+                    <!--                        android:layout_height="match_parent"-->
+                    <!--                        android:layout_weight="3"-->
+                    <!--                        android:text="數量"-->
+                    <!--                        android:textColor="#FFFFFF"/>-->
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="0dp"-->
+                    <!--                        android:layout_height="match_parent"-->
+                    <!--                        android:layout_weight="4"-->
+                    <!--                        android:text="備註"-->
+                    <!--                        android:textColor="#FFFFFF"-->
+                    <!--                        android:layout_gravity="right"/>-->
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/furniture_listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7">
+
+                </ListView>
+
+                <Button
+                    android:id="@+id/add_furniture_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/system_schedule_btn_drawable"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="#8E7E7E"
+                    android:textSize="30sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/check_furniture_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedbutton"
+                    android:text="確認家具明細"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F2F2F2"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/valuationBlue_Btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/valuation_blue"
+                    android:scaleType="centerCrop"
+                    android:background="#00000000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="估價單"
+                    android:textSize="10sp"
+                    android:textColor="#19B0ED"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/order_imgBtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/order_btn_drawable"
+                    android:scaleType="centerCrop"
+                    android:background="#00000000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="訂單"
+                    android:textSize="10sp"
+                    android:textColor="#D5D5D5"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/calendar_imgBtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/calendar_btn_drawable"
+                    android:scaleType="centerCrop"
+                    android:background="#00000000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="行事曆"
+                    android:textSize="10sp"
+                    android:textColor="#D5D5D5"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/system_imgBtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/system_btn_drawable"
+                    android:scaleType="centerCrop"
+                    android:background="#00000000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人事系統"
+                    android:textSize="10sp"
+                    android:textColor="#D5D5D5"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/setting_imgBtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/setting_btn_drawable"
+                    android:scaleType="centerCrop"
+                    android:background="#00000000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的系統"
+                    android:textSize="10sp"
+                    android:textColor="#D5D5D5"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/plateNum_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="車牌號碼："
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toBottomOf="@+id/type_edit_ACD" />
+
+    <EditText
+        android:id="@+id/weight_edit_ACD"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/weight_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="噸"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/weight_edit_ACD"
+        app:layout_constraintStart_toEndOf="@+id/weight_edit_ACD"
+        app:layout_constraintTop_toTopOf="@+id/weight_edit_ACD" />
+
+    <Spinner
+        android:id="@+id/type_sp_ACD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/weight_edit_ACD"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/weight_edit_ACD" />
+
+    <EditText
+        android:id="@+id/type_edit_ACD"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="如: 箱型車"
+        android:inputType="textPersonName"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/type_sp_ACD"
+        app:layout_constraintTop_toBottomOf="@+id/type_sp_ACD" />
+
+    <EditText
+        android:id="@+id/plateNum_edit_ACD"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ-"
+        android:ems="10"
+        android:inputType="text"
+        android:maxLength="9"
+        app:layout_constraintBottom_toBottomOf="@+id/plateNum_text"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/plateNum_text"
+        app:layout_constraintVertical_bias="0.305" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.45" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

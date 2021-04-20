@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.homerenting_prototype_one">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:textColor="@color/text_chip_state_list"
+        android:networkSecurityConfig="@xml/network_security_config">
+
+        <!--Main-->
+        <activity android:name=".main.MainActivity"/>
+        <activity android:name=".main.Login"/>
+        <activity android:name=".calendar.Calendar" />
+
+        <!--Order-->
+        <activity android:name=".order.Order"/>
+        <activity android:name=".order.Order_Detail"/>
+        <activity android:name=".order.Order_Booking"/>
+        <activity android:name=".order.Order_Today"/>
+        <activity android:name=".order.Today_Detail"/>
+        <activity android:name=".order.Order_Cancel"/>
+
+        <!--Valuation-->
+        <activity android:name=".valuation.Valuation"/>
+        <activity android:name=".valuation.Valuation_Detail"/>
+        <activity android:name=".valuation.Valuation_Booking"/>
+        <activity android:name=".valuation.ValuationBooking_Detail"/>
+        <activity android:name=".valuation.Valuation_MatchMaking"/>
+        <activity android:name=".valuation.MatchMaking_Detail"/>
+        <activity android:name=".valuation.Valuation_Cancel"/>
+        <activity android:name=".valuation.ValuationCancel_Detail"/>
+
+        <!--Furniture-->
+        <activity android:name=".furniture.Edit_Furniture"/>
+        <activity android:name=".furniture.Furniture_Detail"/>
+        <activity android:name=".furniture.Furniture_Location"/>
+
+        <!--Schedule-->
+        <activity android:name=".schedule.New_Schedule_Detail"/>
+        <activity android:name=".schedule.Schedule_Detail"/>
+
+        <!--Add Order-->
+        <activity android:name=".add_order.Add_Order"/>
+        <activity android:name=".add_order.Add_Valuation"/>
+
+        <!--System-->
+        <activity android:name=".system.System"/>
+        <activity android:name=".system.System_Data"/>
+        <activity android:name=".system.System_Vacation"/>
+        <activity android:name=".system.System_Schedule"/>
+
+        <!--Bouns-->
+        <activity android:name=".bouns.System_Bonus"/>
+        <activity android:name=".bouns.Bonus_View"/>
+        <activity android:name=".bouns.Bonus_Distribution"/>
+        <activity android:name=".bouns.Distribution_Detail"/>
+        <activity android:name=".bouns.Bonus_List"/>
+        <activity android:name=".bouns.Bonus_List_Detail"/>
+
+        <!--Setting-->
+        <activity android:name=".setting.Setting"/>
+        <activity android:name=".setting.Setting_Information"/>
+        <activity android:name=".setting.Setting_Service"/>
+        <activity android:name=".setting.Setting_Discount"/>
+        <activity android:name=".setting.Setting_Evaluation"/>
+        <activity android:name=".setting.Evaluation_Detail"/>
+        <activity android:name=".setting.Setting_Announcement"/>
+        <activity android:name=".setting.Setting_Record"/>
+        <activity android:name=".setting.Record_Detail"/>
+
+        <activity android:name=".Register_Company"/>
+        <activity android:name=".ForgetPassword" />
+        <activity android:name=".Register" />
+
+        <activity android:name=".main.New_Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

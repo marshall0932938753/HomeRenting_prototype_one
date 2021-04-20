@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/employee_name_DI"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left|center_vertical"
+        android:text="employee_name"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/salaryP_text_DI"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/salaryP_DI"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/salary_percentage_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="%"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/salary_text_DI"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/salary_DI"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:hint="分潤"
+        android:inputType="number" />
+
+</LinearLayout>

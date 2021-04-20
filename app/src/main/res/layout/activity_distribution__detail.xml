@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".bouns.Distribution_Detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back_imgBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="#FFFFFFFF"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="90dp"
+            android:gravity="center"
+            android:text="工單獎金分潤"
+            android:textColor="#19B0ED"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="top"
+                android:background="#00BFFF"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#FFFFFF"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/member_name_DD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="唐文心"
+                        android:textColor="#19B0ED"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/nameTitle_DD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="小姐" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="搬出地址"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/fromAddress_DD"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:text="高雄市三民區建國二路15號" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="搬入地址"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/toAddress_DD"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:text="高雄市大社區中山路5號" />
+                </LinearLayout>
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="0dp"-->
+                <!--                    android:layout_weight="1">-->
+                <!--                    <TextView-->
+                <!--                        android:layout_width="0dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:layout_weight="1"-->
+                <!--                        android:text="家具定位"-->
+                <!--                        android:gravity="center_vertical"-->
+                <!--                        android:textColor="#000000"/>-->
+                <!--                    <Button-->
+                <!--                        android:id="@+id/location_btn"-->
+                <!--                        android:layout_width="0dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:layout_weight="3"-->
+                <!--                        android:text="詳細位置"-->
+                <!--                        android:background="#FFFFFFFF"-->
+                <!--                        android:gravity="left|center_vertical"-->
+                <!--                        android:textColor="#FB8927"/>-->
+                <!--                </LinearLayout>-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#989898" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="搬家日期"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/movingTime_DD"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="2019/10/06 09:00" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="搬家費用"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/price_DD"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="6000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="公司保留"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/csalaryP_text_DD"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="18sp"
+                        android:visibility="visible" />
+
+                    <EditText
+                        android:id="@+id/csalaryP_DD"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/csalary_percentage_mark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="%"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/csalary_text_DD"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/csalary_DD"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="分潤"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="可分配費用"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/distribution_price_DD"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="1000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="安排人力"
+                        android:textColor="#000000" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/salaryDistribution_DD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3" />
+
+                    <!--                    <EditText-->
+                    <!--                        android:id="@+id/ps_editText"-->
+                    <!--                        android:layout_width="0dp"-->
+                    <!--                        android:layout_height="match_parent"-->
+                    <!--                        android:layout_weight="3"-->
+                    <!--                        android:inputType="text"-->
+                    <!--                        android:background="#F2F2F2"-->
+                    <!--                        android:hint="1.鋼琴從後面搬入2.花瓶易碎需多加防護3.多加5個箱子備用4.多帶5個氣泡布"/>-->
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/check_bonus_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundedbutton"
+                    android:text="確認獎金分潤"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F2F2F2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/valuationBlue_Btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/valuation_btn_drawable" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="估價單"
+                android:textColor="#D5D5D5"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/order_imgBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/order_btn_drawable" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="訂單"
+                android:textColor="#D5D5D5"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/calendar_imgBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/calendar_btn_drawable" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="行事曆"
+                android:textColor="#D5D5D5"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/system_imgBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/system_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人事系統"
+                android:textColor="#19B0ED"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/setting_imgBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/setting_btn_drawable" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的系統"
+                android:textColor="#D5D5D5"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

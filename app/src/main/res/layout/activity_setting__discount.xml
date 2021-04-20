@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".setting.Setting_Discount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#19B0ED"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/back_imgBtn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="#19B0ED"
+                android:scaleType="centerCrop"
+                android:src="@drawable/back_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="優惠折扣"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#FFFFFF"
+            android:src="@drawable/logo_long" />
+    </LinearLayout>
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="1"/>-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+
+        <TableLayout
+            android:id="@+id/discount_table_SDC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:shrinkColumns="1"
+            android:stretchColumns="4">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/background_transparent"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="免費估價"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/background_transparent"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="免收訂金"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <Switch
+                    android:id="@+id/switch2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/background_transparent"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="免費取消"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <Switch
+                    android:id="@+id/switch3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/ic_baseline_cancel_24"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:text="短期優惠"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <Switch
+                    android:id="@+id/switch4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/editTextNumber"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:hint="0"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="8dp"
+                    android:text="%"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/shortStart_text_SDC"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_rectanngle"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="2020-10-01"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="─"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/shortEnd_text_SDC"
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_rectanngle"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="2020-11-01"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/discount_id1_SDC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-1"
+                    android:visibility="gone" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/ic_baseline_cancel_24"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:text="長期優惠"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <Switch
+                    android:id="@+id/switch5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/editTextNumber2"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:hint="0"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="8dp"
+                    android:text="%"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/longStart_text_SDC"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_rectanngle"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="2020-01-01"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="─" />
+
+                <TextView
+                    android:id="@+id/longEnd_text_SDC"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_rectanngle"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="2021-01-01"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/discount_id2_SDC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-1"
+                    android:visibility="gone" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/button_LL_SDC"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/add_btn_SDC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFFFF"
+            android:text="新增選項"
+            android:textColor="#FB9825" />
+
+        <Button
+            android:id="@+id/delete_discount_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFFFF"
+            android:text="刪除選項"
+            android:textColor="#19B0ED" />
+
+        <Button
+            android:id="@+id/check_btn_SDC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedbutton"
+            android:text="確認"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:text="免費估價"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="Suspicious0dp" />
+
+        <Switch
+            android:id="@+id/free_evaluation_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:text="免收訂金"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="Suspicious0dp" />
+
+        <Switch
+            android:id="@+id/free_deposit_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:text="免費取消"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="Suspicious0dp" />
+
+        <Switch
+            android:id="@+id/free_cancel_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:text="短期優惠"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="Suspicious0dp" />
+
+        <Switch
+            android:id="@+id/shortTerm_discount_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp" />
+
+        <EditText
+            android:id="@+id/shortTerm_discount_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="5%"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/shortTerm_begin_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="10/01"
+            android:inputType="date" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="—" />
+
+        <EditText
+            android:id="@+id/shortTerm_end_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="10/31"
+            android:inputType="date" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:text="長期優惠"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="Suspicious0dp" />
+
+        <Switch
+            android:id="@+id/longTerm_discount_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp" />
+
+        <EditText
+            android:id="@+id/longTerm_discount_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="10%"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/longTerm_begin_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="05/10"
+            android:inputType="date" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="—" />
+
+        <EditText
+            android:id="@+id/longTerm_end_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="10/31"
+            android:inputType="date" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F2F2F2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/valuationBlue_Btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/valuation_btn_drawable" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="估價單"
+                android:textColor="#D5D5D5"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/order_imgBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/order_btn_drawable" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="訂單"
+                android:textColor="#D5D5D5"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/calendar_imgBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/calendar_btn_drawable" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="行事曆"
+                android:textColor="#D5D5D5"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/system_imgBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/system_btn_drawable" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人事系統"
+                android:textColor="#D5D5D5"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/setting_imgBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/setting_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的系統"
+                android:textColor="#19B0ED"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bonus_name_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_total_text2"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="30000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_first_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_sec_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_third_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_four_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_five_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_six_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_seven_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_eight_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_nine_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_ten_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_eleven_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_twelve_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_thirteen_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_fourteen_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_fifteen_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_sixteen_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_seventeen_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_eighteen_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_nineteen_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_twenty_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_twoOne_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_twoTwo_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_twoThree_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_twoFour_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_twoFive_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_twoSix_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_twoSeven_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_twoEight_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_twoNine_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_thirty_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bonus_thirtyOne_text"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

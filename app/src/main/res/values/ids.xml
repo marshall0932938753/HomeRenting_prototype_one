@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="time_guideline_id" type="id"/>
+    <item name="name_guideline_id" type="id"/>
+    <item name="icon_guideline_id" type="id"/>
+    <item name="datetime_id" type="id"/>
+    <item name="time_id" type="id"/>
+    <item name="name_id" type="id"/>
+    <item name="nametitle_id" type="id"/>
+    <item name="phone_id" type="id"/>
+    <item name="address_id" type="id"/>
+    <item name="icon_id" type="id"/>
+    <item name="chip_id" type="id"/>
+    <item name="added_chip_id" type="id"/>
+    <item name="constraintLayout_id" type="id"/>
+</resources>

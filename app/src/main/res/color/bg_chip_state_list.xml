@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  變換chip點擊背景顏色  -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="#adadad" android:state_checked="true" />
+    <item android:color="#eaeaea" />
+</selector>

@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <TextView
+        android:id="@+id/matchMaking_detail"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:background="#19B0ED"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="媒合中"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/nav_GL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matchMaking_detail">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_V1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.08" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_V2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.32" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_V3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.890511" />
+
+
+                <TextView
+                    android:id="@+id/name_MMD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:text="姓名"
+                    android:textColor="#19B0ED"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_V1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/nameTitle_MMD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="稱謂"
+                    app:layout_constraintBottom_toBottomOf="@+id/name_MMD"
+                    app:layout_constraintStart_toEndOf="@+id/name_MMD" />
+
+                <TextView
+                    android:id="@+id/phoneText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="連絡電話"
+                    android:textColor="#000000"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_V1"
+                    app:layout_constraintTop_toTopOf="@+id/phone_MMD" />
+
+                <TextView
+                    android:id="@+id/phone_MMD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="電話"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_V2"
+                    app:layout_constraintTop_toBottomOf="@+id/nameTitle_MMD" />
+
+                <Button
+                    android:id="@+id/call_btn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:background="#FFFFFFFF"
+                    android:gravity="top"
+                    android:text="撥打電話"
+                    android:textColor="#FB8527"
+                    app:layout_constraintBottom_toBottomOf="@+id/phone_MMD"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_V3"
+                    app:layout_constraintTop_toTopOf="@+id/phone_MMD" />
+
+                <TextView
+                    android:id="@+id/valuationTimeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="估價時間"
+                    android:textColor="#000000"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_V1"
+                    app:layout_constraintTop_toTopOf="@+id/valuationTime_MMD" />
+
+                <TextView
+                    android:id="@+id/valuationTime_MMD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="估價時間"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_V2"
+                    app:layout_constraintTop_toBottomOf="@+id/phone_MMD" />
+
+                <TextView
+                    android:id="@+id/FromAddressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="搬出地址"
+                    android:textColor="#000000"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_V1"
+                    app:layout_constraintTop_toTopOf="@+id/FromAddress_MMD" />
+
+                <TextView
+                    android:id="@+id/FromAddress_MMD"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="搬出地址"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_V3"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_V2"
+                    app:layout_constraintTop_toBottomOf="@+id/valuationTime_MMD" />
+
+                <TextView
+                    android:id="@+id/ToAddressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="搬入地址"
+                    android:textColor="#000000"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_V1"
+                    app:layout_constraintTop_toTopOf="@+id/ToAddress_MMD" />
+
+                <TextView
+                    android:id="@+id/ToAddress_MMD"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="搬入地址"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_V3"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_V2"
+                    app:layout_constraintTop_toBottomOf="@+id/FromAddress_MMD" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="416dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#F2F2F2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ToAddress_MMD" />
+
+                <TextView
+                    android:id="@+id/furnitureDetailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="家具清單"
+                    android:textColor="#000000"
+                    app:layout_constraintBottom_toBottomOf="@+id/furniture_btn_MMD"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_V1"
+                    app:layout_constraintTop_toTopOf="@+id/furniture_btn_MMD" />
+
+                <Button
+                    android:id="@+id/furniture_btn_MMD"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFFFF"
+                    android:gravity="left|center_vertical"
+                    android:text="詳細資料"
+                    android:textColor="#FB8527"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_V2"
+                    app:layout_constraintTop_toBottomOf="@+id/view" />
+
+
+                <TextView
+                    android:id="@+id/movingTime_MMD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="搬家時間"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_V2"
+                    app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+                <TextView
+                    android:id="@+id/car_MMD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="安排車輛"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_V2"
+                    app:layout_constraintTop_toBottomOf="@id/movingTime_MMD" />
+
+                <TextView
+                    android:id="@+id/worktime_MMD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="預計工時"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_V2"
+                    app:layout_constraintTop_toBottomOf="@id/car_MMD" />
+
+                <TextView
+                    android:id="@+id/price_MMD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="搬運費用"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_V2"
+                    app:layout_constraintTop_toBottomOf="@id/worktime_MMD" />
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="416dp"
+                    android:layout_height="2dp"
+                    android:background="#F2F2F2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/furniture_btn_MMD" />
+
+                <TextView
+                    android:id="@+id/noticeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="注意事項"
+                    android:textColor="#000000"
+                    app:layout_constraintBottom_toBottomOf="@+id/notice_MMD"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_V1"
+                    app:layout_constraintTop_toTopOf="@+id/notice_MMD" />
+
+                <TextView
+                    android:id="@+id/notice_MMD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="注意事項"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_V2"
+                    app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="416dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#F2F2F2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/notice_MMD" />
+
+                <TextView
+                    android:id="@+id/movingTimeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="搬家時間"
+                    android:textColor="#000000"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_V1"
+                    app:layout_constraintTop_toTopOf="@+id/movingTime_MMD" />
+
+                <TextView
+                    android:id="@+id/vehicleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="安排車輛"
+                    android:textColor="#000000"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_V1"
+                    app:layout_constraintTop_toTopOf="@+id/car_MMD" />
+
+                <TextView
+                    android:id="@+id/worktimeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="預計工時"
+                    android:textColor="#000000"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_V1"
+                    app:layout_constraintTop_toTopOf="@id/worktime_MMD" />
+
+                <TextView
+                    android:id="@+id/priceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="搬家價格"
+                    android:textColor="#000000"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_V1"
+                    app:layout_constraintTop_toTopOf="@id/price_MMD" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/confirm_MMD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/addorder_btn_drawable"
+                android:text="確認"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/nav_GL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.91928864" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="415dp"
+        android:layout_height="65dp"
+        android:background="#F2F2F2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/valuationBlue_Btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/valuation_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nav_GL" />
+
+    <TextView
+        android:id="@+id/imgb1"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center"
+        android:text="估價單"
+        android:textColor="#19B0ED"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valuationBlue_Btn" />
+
+    <ImageButton
+        android:id="@+id/order_imgBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/order"
+        app:layout_constraintEnd_toStartOf="@+id/calendar_imgBtn"
+        app:layout_constraintStart_toEndOf="@+id/valuationBlue_Btn"
+        app:layout_constraintTop_toTopOf="@+id/nav_GL" />
+
+    <TextView
+        android:id="@+id/imgb2"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="訂單"
+        android:textColor="#D5D5D5"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/imgb3"
+        app:layout_constraintStart_toEndOf="@+id/imgb1"
+        app:layout_constraintTop_toBottomOf="@+id/order_imgBtn" />
+
+    <ImageButton
+        android:id="@+id/calendar_imgBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/calendar_btn_drawable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nav_GL" />
+
+    <TextView
+        android:id="@+id/imgb3"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="行事曆"
+        android:textColor="#D5D5D5"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendar_imgBtn" />
+
+    <ImageButton
+        android:id="@+id/system_imgBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/system_btn_drawable"
+        app:layout_constraintEnd_toStartOf="@+id/setting_imgBtn"
+        app:layout_constraintStart_toEndOf="@+id/calendar_imgBtn"
+        app:layout_constraintTop_toTopOf="@+id/nav_GL" />
+
+    <TextView
+        android:id="@+id/imgb4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="人事系統"
+        android:textColor="#D5D5D5"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/imgb5"
+        app:layout_constraintStart_toEndOf="@+id/imgb3"
+        app:layout_constraintTop_toBottomOf="@+id/system_imgBtn" />
+
+    <ImageButton
+        android:id="@+id/setting_imgBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/setting_btn_drawable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nav_GL" />
+
+    <TextView
+        android:id="@+id/imgb5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:text="我的系統"
+        android:textColor="#D5D5D5"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting_imgBtn" />
+
+    <ImageView
+        android:id="@+id/back_imgBtn_MMD"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/matchMaking_detail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
