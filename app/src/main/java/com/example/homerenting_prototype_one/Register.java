@@ -10,6 +10,8 @@ import android.widget.RadioButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Arrays;
+
 public class Register extends AppCompatActivity {
 
     @Override
@@ -39,6 +41,9 @@ public class Register extends AppCompatActivity {
         }
         if (TextUtils.isEmpty( pwd_check_edit.getText().toString() )){
             pwd_check_edit.setError( "請再次輸入密碼" );
+            if(!pwd_check_edit.getText().toString().equals(pwd_edit.getText().toString())){
+                pwd_check_edit.setError("確認密碼與密碼不符");
+            }
         }
         if (TextUtils.isEmpty( name_edit.getText().toString() )){
             name_edit.setError( "請輸入姓名" );
@@ -54,9 +59,15 @@ public class Register extends AppCompatActivity {
         }
         if (TextUtils.isEmpty( id_edit.getText().toString() )){
             id_edit.setError("請輸入身分證字號");
+            if(!checkID(id_edit.getText().toString())){
+                id_edit.setError("身份證字號有誤");
+            }
         }
         if (TextUtils.isEmpty( phone_edit.getText().toString() )){
             phone_edit.setError( "請輸入手機號碼" );
+            if(!checkPhone(phone_edit.getText().toString())){
+                phone_edit.setError("手機號碼格式有誤");
+            }
         }
         next_btn.setOnClickListener( new View.OnClickListener() {
             @Override
@@ -66,5 +77,49 @@ public class Register extends AppCompatActivity {
                 startActivity( next_intent );
             }
         } );
+
+
+    }
+    private boolean checkID(String id){
+        if(!id.matches("[a-zA-Z][1-2][0-9]{8}")){
+            return false;
+        }
+
+        String newID = id.toUpperCase();
+        int[] headNum = new int[]{
+                1, 10, 19, 28, 37,
+                46, 55, 64, 39, 73,
+                82, 2, 11, 20, 48,
+                29, 38, 47, 56, 65,
+                74, 83, 21, 3, 12, 30
+        };
+        char[] headCharUpper = new char[]{
+                'A', 'B', 'C', 'D', 'E', 'F', 'G',
+                'H', 'I', 'J', 'K', 'L', 'M', 'N',
+                'O', 'P', 'Q', 'R', 'S', 'T', 'U',
+                'V', 'W', 'X', 'Y', 'Z'
+        };
+        int index = Arrays.binarySearch(headCharUpper, newID.charAt(0));
+        int base = 8;
+        int total = 0;
+        for (int i = 1; i < 10; i++) {
+            int tmp = Integer.parseInt(Character.toString(newID.charAt(i))) * base;
+            total += tmp;
+            base--;
+        }
+
+        total += headNum[index];
+        int remain = total % 10;
+        int checkNum = (10 - remain) % 10;
+        if (Integer.parseInt(Character.toString(newID.charAt(9))) != checkNum) {
+            return false;
+        }
+        return true;
+    }
+    private boolean checkPhone(String phone){
+        if(!phone.matches("[0-9]{10}")){
+            return false;
+        }
+        else return true;
     }
 }

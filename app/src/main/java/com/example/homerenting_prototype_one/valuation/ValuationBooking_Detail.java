@@ -51,6 +51,7 @@ import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.GregorianCalendar;
 
 import okhttp3.Call;
@@ -130,7 +131,7 @@ public class ValuationBooking_Detail extends AppCompatActivity {
                 }
                 movingDateText.setText(year+"-"+(month+1)+"-"+dayOfMonth);
             },calendar.get( GregorianCalendar.YEAR ),calendar.get( GregorianCalendar.MONTH ),calendar.get( GregorianCalendar.DAY_OF_MONTH));
-            date_picker.getDatePicker().setMinDate(calendar.getTimeInMillis());
+            date_picker.getDatePicker().setMinDate(new Date().getTime());
             date_picker.show();
         });
 

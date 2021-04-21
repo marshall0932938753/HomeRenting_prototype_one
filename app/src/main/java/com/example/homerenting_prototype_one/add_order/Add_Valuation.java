@@ -94,6 +94,7 @@ public class Add_Valuation extends AppCompatActivity {
                 }
                 dateText.setText(year + "-" + (month + 1) + "-" + dayOfMonth);
             },calendar.get( GregorianCalendar.YEAR ),calendar.get( GregorianCalendar.MONTH ),calendar.get( GregorianCalendar.DAY_OF_MONTH));
+            datePicker.getDatePicker().setMinDate(new Date().getTime());
             datePicker.show();
         });
 

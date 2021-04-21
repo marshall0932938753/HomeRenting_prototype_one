@@ -39,6 +39,7 @@ import org.jetbrains.annotations.NotNull;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
+import java.util.Date;
 import java.util.GregorianCalendar;
 
 import okhttp3.Call;
@@ -104,6 +105,7 @@ public class Add_Order extends AppCompatActivity {
                 if(dayOfMonth < 10) dayStr = "0"+dayStr;
                 movingDate_text.setText(year+"-"+monthStr+"-"+dayStr);
             },calendar.get( GregorianCalendar.YEAR ),calendar.get( GregorianCalendar.MONTH ),calendar.get( GregorianCalendar.DAY_OF_MONTH));
+            datePicker.getDatePicker().setMinDate(new Date().getTime());
             datePicker.show();
         });
 

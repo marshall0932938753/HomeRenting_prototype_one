@@ -317,7 +317,7 @@ public class Setting_Discount extends AppCompatActivity {
                 period_discounts.get(index-3)[type+3] = year+"-"+monthStr+"-"+dayStr;
                 Log.d(TAG, "date change("+(index-3)+"/"+period_discounts.size()+"): "+ Arrays.toString(period_discounts.get(index-3)));
             },calendar.get(GregorianCalendar.YEAR),calendar.get(GregorianCalendar.MONTH),calendar.get(GregorianCalendar.DAY_OF_MONTH));
-            date_picker.getDatePicker().setMinDate(calendar.getTimeInMillis());
+            date_picker.getDatePicker().setMinDate(new Date().getTime());
             date_picker.show();
         });
 

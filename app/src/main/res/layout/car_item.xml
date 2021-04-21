@@ -10,7 +10,7 @@
         android:id="@+id/car_choice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1" />
+        android:layout_weight="0.68" />
 
     <EditText
         android:id="@+id/weight_CI"
@@ -20,7 +20,8 @@
         android:ems="10"
         android:gravity="center"
         android:hint="3.5"
-        android:inputType="numberDecimal" />
+        android:inputType="numberDecimal"
+        android:visibility="gone" />
 
     <EditText
         android:id="@+id/type_CI"
