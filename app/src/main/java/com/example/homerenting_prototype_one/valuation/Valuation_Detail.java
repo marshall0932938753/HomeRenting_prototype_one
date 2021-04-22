@@ -39,6 +39,7 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
+import java.util.Date;
 import java.util.GregorianCalendar;
 
 import okhttp3.Call;
@@ -169,6 +170,7 @@ public class Valuation_Detail extends AppCompatActivity {
             DatePickerDialog date_picker = new DatePickerDialog( Valuation_Detail.this, (view, year, month, dayOfMonth) -> {
                 pickDate_edit.setText(year + "-" + (month + 1) + "-" + dayOfMonth);
             },calendar.get( GregorianCalendar.YEAR ),calendar.get( GregorianCalendar.MONTH ),calendar.get( GregorianCalendar.DAY_OF_MONTH));
+            date_picker.getDatePicker().setMinDate(new Date().getTime());
             date_picker.show();
         });
 
